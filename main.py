@@ -110,6 +110,8 @@ def main():
     app_bot.run_polling()
 
 if __name__ == '__main__':
+    # Flask ko alag thread mein chalana
     Thread(target=run_flask).start()
+    # Bot ko start karna
     main()
-    
+
