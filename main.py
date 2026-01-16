@@ -22,8 +22,7 @@ def ai_reply(message):
         response = model.generate_content(message.text)
         bot.reply_to(message, response.text)
     except Exception as e:
-        print(f"AI Error: {e}")
-        bot.reply_to(message, "AI connect nahi ho paa raha, apni API Key check karein.")
+        bot.reply_to(message, "AI connect nahi ho paa raha, Gemini Key check karein.")
 
 @app.route('/')
 def home():
