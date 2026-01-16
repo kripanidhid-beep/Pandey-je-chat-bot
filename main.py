@@ -8,7 +8,7 @@ TOKEN = os.environ.get('TOKEN')
 GEMINI_KEY = os.environ.get('GEMINI_API_KEY')
 
 genai.configure(api_key=GEMINI_KEY)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
