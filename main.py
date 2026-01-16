@@ -38,5 +38,7 @@ def run_flask():
 
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
-    bot.infinity_polling()
-    
+    print("Bot is starting...")
+    # non_stop=True aur interval=0 hata kar simple polling rakhein
+    bot.polling(none_stop=True, timeout=60)
+
